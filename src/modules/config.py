@@ -1,5 +1,5 @@
 """
-Copyright (C) 2023 SE23-Team44
+Copyright (C) 2023 SE25-Team44
 
 Licensed under the MIT License.
 See the LICENSE file in the project root for the full license information.
@@ -24,7 +24,7 @@ class Config(object):
         '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'
     )
     GOOGLE_DISCOVERY_URL = "https://accounts.google.com/.well-known/openid-configuration"
-    GOOGLE_REDIRECT_URI = "http://localhost:5000/callback"
+    GOOGLE_REDIRECT_URI = "http://127.0.0.1:5000/callback"
 
 
 class ProductionConfig(Config):
