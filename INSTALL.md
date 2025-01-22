@@ -17,7 +17,7 @@ Ensure you have the following installed:
 Clone the repository from GitHub. Open a terminal and run:
 
 ```bash
-git clone https://github.com/SE-Fall-2024-Team-69/slash.git
+git clone https://github.com/ABHINAVSHARMA8/slash_2.git
 cd slash
 git checkout main
 ```
@@ -42,9 +42,10 @@ pip install -r requirements.txt
 ## Step 4: Google OAuth Setup
 
 1. **Google OAuth Client Secrets**: Make sure you have a valid Google OAuth client secrets file.
-2. Place your client secrets JSON file at:
+2. Add localhost:5000/callback and http://127.0.0.1:5000/callback as redirect uri's in the Google OAuth 2.0 console.
+3. Place your client secrets JSON file at:
    ```
-   C:\Users\Desmond\Desktop\slash\src\client_secret_92320207172-8cnk4c9unfaa7llua906p6kjvhnvkbqd.apps.googleusercontent.com.json
+   client_secret.json
    ```
 
 ## Step 5: Configure Environment Variables
@@ -56,7 +57,7 @@ Example `.env` file contents:
 ```plaintext
 set FLASK_APP=.\src\modules\app 
 FLASK_ENV=development
-GOOGLE_CLIENT_SECRET_PATH=C:\Users\Desmond\Desktop\slash\src\client_secret_92320207172-8cnk4c9unfaa7llua906p6kjvhnvkbqd.apps.googleusercontent.com.json
+GOOGLE_CLIENT_SECRET_PATH=client_secret.json
 ```
 
 ## Step 6: Run the Application
